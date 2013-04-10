@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* 
+	time:2013-03-21
+	desc:public framework page login.html;
+	version:1.0
+*/
+
+/*******************public style****************/
+.inline-block{ display:inline-block; *zoom:1; *display:inline;}
+.vertical-align-m{ vertical-align:middle;}
+.t-l{ text-align:left;} 
+.t-c{ text-align:center;} 
+.t-r{text-align:right;}
+.pRelative{ position:relative;}
+.pAbsolute{ position:absolute;}
+ 
+
+body{font-family:"微软雅黑", arial!important; background:url(../images/bg/white_tiles.png) repeat}
+li{ list-style:none;}
+
+.login-wrap{ width:278px; margin:100px auto; border:1px solid #CCC; border-radius:6px; padding:15px; box-shadow: 0 0 6px rgba(0,0,0,0.1);
+			 background:#f2f2f2;
+			 background-image:-ms-linear-gradient(top,#fafafa,#f2f2f2);
+			 background-image: -webkit-gradient(linear,0 0,0 100%,from(#fafafa),to(#f2f2f2));
+			 background-image:-webkit-linear-gradient(top,#fafafa,#f2f2f2);
+			 background-image:-moz-linear-gradient(top,#fafafa,#f2f2f2);
+			 background-image:-o-linear-gradient(top,#fafafa,#f2f2f2);
+			 background-image:linear-gradient(top,#fafafa,#f2f2f2);
+}
+
+.login-wrap .login-btns{ padding: 0 0 8px 0; text-align:center;}
+.login-wrap .login-btns .btn-wrap{ display:inline-block; *display:inline; *zoom:1; border:1px solid #ddd; border-radius:3px; padding:3px; margin:0 3px;  }
+.login-wrap .login-btns .btn-wrap .btn{ padding:4px 6px;  font-weight:bold}
+.login-wrap .login-inner{ border:1px solid #CCC; border-radius:6px; background:#FFF;width:278px }
+.login-wrap .login-inner .login-inner-form{ display:none; padding:10px; color:#666; }
+.login-wrap .login-inner .login-inner-form .username{ border-radius:6px 6px 0 0; margin:0!important; padding:0!important; width:100%; text-indent:30px; background:url(../images/icon/user.png) 5px 16px no-repeat}
+.login-wrap .login-inner .login-inner-form .password{border-radius:0 0 6px 6px;margin:0!important; padding:0!important;width:100%;text-indent:30px;
+background:url(../images/icon/key.png) 5px 16px no-repeat}
+.login-wrap .login-inner .login-inner-form .big{ min-height:48px; line-height:48px!important;}
+.login-wrap .login-inner .login-inner-form .control-group input{ width:100%; padding:4px 0; margin-bottom:8px;}

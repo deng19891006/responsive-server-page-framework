@@ -198,7 +198,7 @@
   }
   .row-fluid:before,
   .row-fluid:after {
-    display: table;
+ 
     line-height: 0;
     content: "";
   }
@@ -548,7 +548,7 @@
   }
   .row-fluid:before,
   .row-fluid:after {
-    display: table;
+     
     line-height: 0;
     content: "";
   }

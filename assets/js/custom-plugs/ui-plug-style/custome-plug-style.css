@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* 
+	desc : custom-plugs-style 自定义插件样式汇总(后期将分开)
+		   tom  
+	       2013-03-28 
+ */
+
+
+/*================== range slider ===================*/
+.ui-rangeSlider-horizontal{
+	height:4px;
+	width:100%;
+	border:1px solid #bababa;
+	background:#d7d7d7;
+	box-shadow: 0 1px 0 #fff, 0 1px 0 #cfcfcf inset;
+	margin:8px 0;
+	border-radius:6px;
+	position:relative;
+}
+
+.ui-rangeSlider-horizontal .ui-rangeSlider-range{
+	height:4px;
+	position:absolute; 
+	left:0;
+	top:-1px;
+	border: 1px solid #5ba8e1;
+    box-shadow: 0 1px 0 #aad6f6 inset;
+	border-radius:6px;
+	background: #9bcff5;
+	background: -moz-linear-gradient(top, #9bcff5 0%, #84c4f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bcff5), color-stop(100%,#84c4f3));
+	background: -webkit-linear-gradient(top, #9bcff5 0%,#84c4f3 100%);
+	background: -o-linear-gradient(top, #9bcff5 0%,#84c4f3 100%);
+	background: -ms-linear-gradient(top, #9bcff5 0%,#84c4f3 100%);
+	background: linear-gradient(top, #9bcff5 0%,#84c4f3 100%);
+ 
+}
+
+.ui-rangeSlider-horizontal .ui-rangeSlider-btn{
+	width:16px;
+	height:16px;
+	display:block;
+	left:0;
+	top:-6px;
+	background:url(images/handle.png) no-repeat;
+	position:absolute;
+	cursor:pointer;
+}
+.ui-rangeSlider-horizontal .ui-rangeSlider-btn:hover{
+	background:url(images/handle.png) 0 -16px no-repeat;
+}
+.ui-rangeSlider-horizontal .ui-rangeSlider-btn:active{
+	background:url(images/handle.png) 0 -32px no-repeat;
+}
+.ui-rangeSlider-horizontal .lhandel{ margin-left:-7px; z-index:1}
+.ui-rangeSlider-horizontal .rhandel{ margin-left:-7px; z-index:1}

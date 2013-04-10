@@ -394,7 +394,7 @@ a:hover {
 
 .row-fluid:before,
 .row-fluid:after {
-  display: table;
+ 
   line-height: 0;
   content: "";
 }
@@ -1051,6 +1051,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
+   
 }
 
 select,
@@ -1973,7 +1974,7 @@ legend + .control-group {
 table {
   max-width: 100%;
   background-color: transparent;
-  border-collapse: collapse;
+  border-collapse: 0;
   border-spacing: 0;
 }
 
