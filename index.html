@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/FortAwesome-Font-Awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/js/custom-plugs/ui-plug-style/custome-plug-style.css">
 <link rel="stylesheet" type="text/css" href="assets/js/datepicker/css/datepicker.css">
+<!--<link rel="stylesheet" type="text/css" href="assets/js/calender.css">-->
 <!--[if lt IE 9]>
 <script type="text/javascript" src="assets/js/html5.js"></script>
 <script src="assets/js/css3-mediaqueries.js"></script>
@@ -18,7 +19,8 @@
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <script type="text/javascript" src="assets/js/custom-plugs/ui-custom-range-slider.js"></script>
 <script type="text/javascript" src="assets/js/datepicker/js/datepicker.js"></script>
-</head>
+<script type="text/javascript" src="assets/js/custom-plugs/ui-custome-rtable.js"></script>
+<!--<script type="text/javascript" src="assets/js/CalendarJs.js"></script>-->
 <body>
 	<section id="wraper">
     	<header id="header" class="navbar navbar-inverse clearfix">
@@ -107,6 +109,11 @@
                                     </span>
                               </div>
                               <div class="row-fluid">
+                              		<span class="span12"  >
+                                    	<input type="text" class="span3" id="date2"/>
+                                    </span>
+                              </div>
+                              <div class="row-fluid">
                               		<span class="span3">
                                     	<div class="bi-ui-widget">
                                         	<div class="whead clearfix"><h6>test</h6><span class="info">12-121212</span></div>
@@ -184,6 +191,177 @@
                                         </div>
                                     </span>
                                </div>
+                               <div class="row-fluid">
+                              		<span class="span12">
+                                    	<div class="bi-ui-widget" id="table_test">
+                                        	<div class="whead clearfix" ><h6>test</h6> </div>
+                                        <!--<table class="bi-ui-rtable" width="100%">
+                                            	<thead>
+                                                    <tr>
+                                                        <td>交易月份</td>
+                                                        <td>店铺名称</td>
+                                                        <td>累计销售额</td>
+                                                        <td>项目进度</td>
+                                                        <td>销售进度指标</td>
+                                                        <td>日均销售额</td>
+                                                        <td>订单平均销售额</td>
+                                                        <td>累计活跃天数</td>
+                                                        <td>累计订单数</td>
+                                                        <td>目标达成率</td>
+                                                        <td>目标销售额</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                	<tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr><tr>
+                                                        <td>2013-04</td>
+                                                        <td>紫荆花官方旗舰店</td>
+                                                        <td>551149.44</td>
+                                                        <td>266666.67</td>
+                                                        <td>2.07</td>
+                                                        <td>34446.84</td>
+                                                        <td>614.44</td>
+                                                        <td>16</td>
+                                                        <td>897</td>
+                                                        <td>1.1023</td>
+                                                        <td>500000.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="bi-ui-rtable-bottompanel">
+                                            	<div class="bi-ui-rtable-bottompanel-left">
+                                                	<span class="bi-ui-rtable-pagelist">
+                                                    	<span class="bi-ui-rtable-pagelist-first bi-ui-rtable-pagelist-disabled">&laquo;</span>
+                                                        <span class="bi-ui-rtable-pagelist-pre bi-ui-rtable-pagelist-disabled">&lsaquo;</span>
+                                                        <span class="bi-ui-rtable-pagelist-num bi-ui-rtable-pagelist-curr bi-ui-rtable-pagelist-disabled">1</span>
+                                                        <span class="bi-ui-rtable-pagelist-num">2</span>
+                                                        <span class="bi-ui-rtable-pagelist-num">3</span>
+                                                        <span class="bi-ui-rtable-pagelist-space">...</span>
+                                                        <span class="bi-ui-rtable-pagelist-num">16</span>
+                                                        <span class="bi-ui-rtable-pagelist-num">17</span>
+                                                        <span class="bi-ui-rtable-pagelist-num">18</span>
+                                                        <span class="bi-ui-rtable-pagelist-next">&rsaquo;</span>
+                                                        <span class="bi-ui-rtable-pagelist-last">&raquo;</span>
+                                                    </span>
+                                                    <span class="bi-ui-rtable-goto">
+                                                    	<span>转到：</span><select class="goto" ><option>1</option></select>
+                                                    </span>
+                                                    <span class="bi-ui-rtable-count">
+                                                    	<span>每页：</span><select class="goto"><option>10</option></select>
+                                                    </span>
+                                                </div>
+                                                <span class="bi-ui-rtable-bottompanel-right">
+                                                	<span class="bi-ui-rtable-curr">1</span>/
+                                                    <span class="bi-ui-rtable-totalpage">30</span>页
+                                                </span>
+                                            </div>-->
+                                        </div>
+                                        <!--<ul>
+                                            <li id="calendarBoxB">
+                                                <label class="fl">时间：</label>
+                                                <div class="timedata ">
+                                                    <div class="calendarTabList calendarTab">
+                                                        <span class="day cur">日</span>
+                                                        <span class="week">周</span>
+                                                        <span class="month">月</span>
+                                                    </div>
+                                                    <input id="startDate" name="rptInshopCrystalMerchantDto.startDate" type="text" class="ipt2_left date7" value="2013-03-17" datatype="day" readonly><input type="text" class="ipt2_center" value="至" readonly><input id="endDate" name="rptInshopCrystalMerchantDto.endDate" type="text" class="ipt2_right date7" value="2013-04-16" readonly>
+                                                    <a href="#" class="btn_search ml5" onclick="javascript:searchData();">搜 索</a><span class="icon ml15"></span><a href="#" class="importdata ml15" onclick="javascript:exportExcel();"><i class="importdata_icon"></i>导出数据</a>
+                                                </div>
+                                            </li>
+                                        </ul>-->
+                                    </span>
+                                     
+                               </div>
                         </article>
                     </section>
                 </div>
@@ -194,6 +372,7 @@
             <p class="foot-right">Copyright 2013 All Rights Reserved</p>
         </footer>
  </section>
+ 
 </body>
 </html>
 <script type="text/javascript">
@@ -210,12 +389,72 @@
 			 
 			},
 			onChange: function(formated, dates){
-				formated = formated.toString().split(",");
+				/*formated = formated.toString().split(",");
 				formated = formated.join(" ~ ")
-				$("#date").val(formated);
+				$("#date").val(formated);*/
+				formated = formated.toString().split(",");
+				var sweek = getYearWeek(formated[0]),
+				    eweek = getYearWeek(formated[1]);
+				sweek = (formated[0].split('-'))[0]+"-"+sweek;
+				eweek = (formated[1].split('-'))[0]+"-"+eweek;
+				$("#date").val(sweek+" ~ "+eweek);
 			}
 		});
-		var a = document.getElementById("content-wrap");
-		console.log(a.valueOf());
+		
+	    $('#date2').DatePicker({
+			date: '2008-07-31',
+		    calendars: 1,
+			starts: 1,
+			onChange: function(formated, dates){
+				 $("#date2").val(formated);
+			}
+		});
+		
+		new ui_custome_rtable({
+				  domWraper:"table_test",
+				  pagesize:10,
+				  datasource:"tabletestdata.json",
+				  fields:{
+						  Name: {
+							  title: 'Name',
+						  },
+						  EmailAddress: {
+							  title: 'Email address',
+						  },
+						  Password: {
+							  title: 'User Password',
+						  },
+						  Gender: {
+							  title: 'Gender',
+						  },
+						  CityId: {
+							  title: 'City',
+						  },
+						  BirthDate: {
+							  title: 'Birth date',
+							   
+						  },
+						  Education: {
+							  title: 'Education',
+						  },
+						  About: {
+							  title: 'About this person',
+						  }
+				   }
+		 });
+		 
+		 
+		
+		
+		/*var reportMaxDate = new  reportMaxDate();
+		$('.date7').calendar({
+			input:'.date7',
+			box:'#calendarBoxB',
+			defaultType:'day',
+			dayNumber:3,
+			LimitEnd:reportMaxDate,
+			flip:true
+		});*/
+
 	})
 </script>

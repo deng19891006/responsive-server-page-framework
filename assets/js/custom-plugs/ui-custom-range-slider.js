@@ -219,9 +219,9 @@
 						 }
 					  },options);
 			var _this = $(this),
-				_startAccount = (options.startValue/options.maxValue*100).toFixed(5)
-				_endAccount = (options.endValue/options.maxValue*100).toFixed(5),
-				_rangeAccount = (_endAccount-_startAccount).toFixed(5),
+				_startAccount = (options.startValue/options.maxValue*100).toFixed(1)
+				_endAccount = (options.endValue/options.maxValue*100).toFixed(1),
+				_rangeAccount = (_endAccount-_startAccount).toFixed(1),
 				_draging = "",
 				_thisleft = _this.offset().left,
 				_offsetSmall = 0,
@@ -243,6 +243,8 @@
 				$(this).css({"z-index":2});
 				_rhandel.css({"z-index":1});
 			    _offsetSmall = e.pageX-_range.offset().left;
+				e.stopPropagation();
+        		e.preventDefault();
 			});
 			
 			_rhandel.mousedown(function(e){
@@ -252,13 +254,15 @@
 				$(this).css({"z-index":2});
 				_lhandel.css({"z-index":1});
 				_offsetSmall = e.pageX-_range.offset().left-_range.width();
+				e.stopPropagation();
+        		e.preventDefault();
 			});
 			  
-			$(window.document).mousemove(function(e){
-				if(_draging=='l'){
+			$(window.document.body).mousemove(function(e){
+			     if(_draging=='l'){
 					  var _lh = (_lhandel[0].style.left.split('%'))[0],
 					 	  _rh = (_rhandel[0].style.left.split('%'))[0];
-				      var _t = (((e.pageX - _thisleft- _offsetSmall)/_totalWidth)*100).toFixed(5);
+				      var _t = (((e.pageX - _thisleft- _offsetSmall)/_totalWidth)*100).toFixed(1);
 					  if(_t>=0 && _t<=_rh){
 						 _lhandel.css({"left":_t+"%"});
 					   	   _range.css({"left":(_t)+"%","width":getRangeWidth()+"%"});
@@ -266,13 +270,11 @@
 				 }else if(_draging=='r'){
 					  var _lh = (_lhandel[0].style.left.split('%'))[0],
 					 	  _rh = (_rhandel[0].style.left.split('%'))[0];
-				 	  var _t = (((e.pageX - _thisleft- _offsetSmall)/_totalWidth)*100).toFixed(5);
+				 	  var _t = (((e.pageX - _thisleft- _offsetSmall)/_totalWidth)*100).toFixed(1);
 					  if( _t>=_lh && _t<=100){
 					  	 _rhandel.css({"left":_t+"%"})
 						_range.css({ "width":getRangeWidth()+"%"})
 					  }
-				}else{
-				 	return;
 				}
 			}).mouseup(function(e) {
                 _draging="stop"
@@ -281,7 +283,7 @@
 			function getRangeWidth (){
 				var _lh = _lhandel[0].style.left.split('%'),
 					_rh = _rhandel[0].style.left.split('%');
-				return (_rh[0]-_lh[0]);
+				return ((_rh[0]-_lh[0]).toFixed(1));
 			}
 		}	
 	});

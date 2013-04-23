@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*日历弹框框架*/
+#calenderBox{position:absolute;z-index:999;float:left;overflow:hidden;padding:30px 7px 30px;border:1px solid #8BA6BF;background-color:#FFF;color:#999;font-size:12px;text-align:center;_zoom:1;}
+#calenderBox .prev,#calenderBox .prevNo,#calenderBox .next,#calenderBox .nextNo{display:inline;position:absolute;top:7px;z-index:1;float:left;width:16px;height:17px;background-image:url(../images/btn_calender.png);}
+#calenderBox .prev{left:7px;background-position:-184px 0;cursor:pointer;}
+#calenderBox .prevNo{left:7px;background-position:-158px 0;}
+#calenderBox .next{right:7px;background-position:-184px -26px;cursor:pointer;}
+#calenderBox .nextNo{right:7px;background-position:-158px -26px;}
+.calendarBt{position:absolute;right:7px;bottom:7px;text-align:right;}
+.calendarBt span{display:inline-block;width:45px;height:20px;overflow:hidden;margin-left:5px;background-image:url(../images/btn_calender.png);text-align:left;text-indent:-999px;cursor:pointer;}
+#calendarCancel{background-position:0 -30px;}
+#calendarConfir{background-position:0 0;}
+#calenderBox tr{margin:0;padding:0}
+#calendarMsg,#dayHead{position:absolute;top:9px;left:7px;}
+#calendarMsg{display:block;width:500px;color:#666;font-style:normal;font-size:12px;line-height:14px;}
+.calenderBox{display:inline;float:left;overflow:hidden;padding-bottom:8px;_padding-bottom:0;_zoom:1}
+td.cur,td.sltCalendar{background-color:#f90;color:#fff;}
+.date{width:24px;height:14px;background:#fff;color:#06c;cursor:pointer;}
+/*日期类型*/
+.calendarTab {float:left;width:88px;height:20px;line-height:20px;background:url(../images/btn_calender.png) no-repeat -112px -76px; }
+.calendarTab span,#CalendarBox .calendarTab b{display:inline;text-align:center;}
+.calendarTab span{float:left;width:29px;cursor: pointer;}
+.calendarTab .cur{color:#2C66A3;background:url(../images/btn_calender.png) no-repeat -112px -46px;width:30px;height:20px; line-height:20px;font-weight:bold;}
+/*周*/
+#weekbox td{padding:2px;}
+/*月*/
+#monthbox table,#monthbox th,#monthbox td,#weekbox table,#weekbox td,#weekbox th{border:1px solid #CCE7FF;border-collapse:collapse;line-height:16px;}
+#monthbox table,#weekbox table{width:510px;margin:2px 0;}
+#monthbox th,#weekbox th{width:50px;background:#CCE7FF;color:#333}
+#monthbox td{width:38px;padding:16px 0;}
+/*日*/
+.calendarTabDay{background: none; }
+.calendarTabDay .cur{background: none;}
+#daybox{margin-bottom:8px;padding-bottom:4px;border:1px solid #CCE7FF;}
+#dayHead{color:#333;font-weight:bold;line-height:14px;}
+.dayTable{display:inline;float:left;width:172px;margin:1px;border:none}
+.dayTable th{background:#CCE7FF;color:#06c}
+.dayTable .yellowTxt{color:#f90;}
+.dayTable th{ font-weight:bold;}
+.dayTable th,.dayTable td{width:25px;padding:2px 0 3px;line-height:14px; text-align:center;}
+#dayHead td{color:#333}
